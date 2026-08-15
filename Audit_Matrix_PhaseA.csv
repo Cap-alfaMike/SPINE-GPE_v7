@@ -1,0 +1,36 @@
+Source,Category,Status,Hash,Claim_Link,Action_Required,Notes
+SPINE_GPEv7_PHASE0_REPRODUCIBILITY_DOSSIER_COLAB_v1.0.0.ipynb,Phase0_Closure,Available,Not_Computed_Local,PHASE0_LOCK_v1.0.0,None - Core pipeline script verified,Validates Phase 0 freeze with expected hashes: Master Lock 38d3e5e5... Master Freeze 3ee7e7ec...
+SPINE_GPEv7_FASE0_COLAB_v7.0.3.ipynb,Phase0_Legacy,Available,Not_Computed_Local,None_Direct,Deprecate - Superseded by v1.0.0 series,Legacy version - multiple numbered duplicates exist
+SPINE_V7_FASE_0.ipynb,Phase0_Legacy,Available,Not_Computed_Local,None_Direct,Deprecate - Superseded by PHASE0_CLOSURE series,Orphan code - not referenced in v7 DAG
+SPINE_GPEv7_LAYOUT_CLOSURE_AND_RAIS_FORMAL_COLAB_v1.0.1.ipynb,Phase0_RAIS,Available,Not_Computed_Local,RAIS_baseline,None - Multiple duplicates detected,(1) (2) variants are orphan copies - consolidate to single canonical version
+SPINE_GPEv7_PHASE0_CLOSURE_COLAB_v1.0.0.ipynb,Phase0_Closure,Available,Not_Computed_Local,PHASE0_CLOSURE,None - Multiple duplicates detected,(1)-(4) variants are orphan copies
+SPINE_GPEv7_PNAD_COVID_CERTIFIER_COLAB_v1.0.2.ipynb,PNAD_COVID,Available,Not_Computed_Local,PNAD_COVID_Cert,None - Highest version in series,(1) (2) variants are orphan copies
+SPINE_GPEv7_PNAD_COVID_C014_AUDITOR_COLAB_v1.0.0.ipynb,PNAD_COVID_Audit,Available,Not_Computed_Local,PNAD_COVID_C014,None - Auditor module,Multiple duplicates (1) (2) should be removed
+SPINE_GPEv7_PNADC_CERTIFIER_COLAB_v1.2.0.ipynb,PNADc_Certifier,Available,Not_Computed_Local,PNADc_2022_2024,None - Latest version,v1.0.0 and v1.1.0 are superseded
+SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_COLAB_v1.0.1.ipynb,PNADc_Proxy,Available,Not_Computed_Local,Proxy_Engine,None - Active version,v1.0.0 superseded; duplicates (1)(2)(3) are orphans
+SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_COLAB_v1.2.0.ipynb,PNADc_Backcast,Available,Not_Computed_Local,Backcast_Engine,None - Publication-ready hardening,v1.1.0 superseded; duplicates are orphans
+SPINE_GPEv7_PHASE1_EVIDENCE_FOUNDATION_COLAB_v1.0.0.ipynb,Phase1_Core,Available,Not_Computed_Local,PHASE1_LOCK_FREEZE,None - Core evidence foundation,Duplicates (1)(2) are orphans
+SPINE_GPEv7_PHASE1_EXTENDED_EVIDENCE_COLAB_v1.0.0.ipynb,Phase1_Extended,Available,Not_Computed_Local,PHASE1_Extended,None - Extended evidence module,(1) is orphan; (2) has 2MB size difference - needs integrity check
+FASE_2_.ipynb,Phase2_Analytical,Available,Not_Computed_Local,PHASE2_Intake,None - Main Phase 2 analytical doc,References Evidence Cube geography_fixed_v101
+FASE_2_E_3_FINALE.ipynb,Phase2_Phase3_Hybrid,Available,Not_Computed_Local,PHASE2_3_Combined,Review_Needed,Potentially non-standard combined execution - verify against canonical Phase 2/3 separation
+FASE_3.ipynb,Phase3_Mechanism,Available,Not_Computed_Local,PHASE3_Intake_Gate,None - Phase 3 mechanism intake,References PHASE2_MASTER_HASH a8e928d6...
+FASE_3_FINALE.ipynb,Phase3_Mechanism,Available,Not_Computed_Local,PHASE3_Final,Review_Needed,Verify if supersedes FASE_3.ipynb or is duplicate
+FASE_4.ipynb,Phase3_Spatial,Available,Not_Computed_Local,PHASE3_Spatial_Mechanism,None - Spatial mechanism engine (Digital Land Rent),Actually Phase 3 Notebook 04 per content header
+Untitled2.ipynb,Unclassified,Available,Not_Computed_Local,None,Delete_Urgent,Orphan notebook - no SPINE-GPE naming convention
+Untitled3.ipynb,Unclassified,Available,Not_Computed_Local,None,Delete_Urgent,Orphan notebook - no SPINE-GPE naming convention
+Untitled4.ipynb,Unclassified,Available,Not_Computed_Local,None,Delete_Urgent,Orphan notebook - no SPINE-GPE naming convention
+GDrive_Master_Lock_Phase0,Remote_Manifest,BLOCKED_Remote,N/A,PHASE0_LOCK,User_Must_Verify,Expected hash: 38d3e5e5380032fd61997a8e913113d5430f8670af9c51870a47edcc97232c53
+GDrive_Master_Freeze_Phase0,Remote_Manifest,BLOCKED_Remote,N/A,PHASE0_FREEZE,User_Must_Verify,Expected hash: 3ee7e7eca7f71d6e4216621e30bb71541829fa5709be13d2a4ffb46155312454
+GDrive_Phase1_Lock,Remote_Manifest,BLOCKED_Remote,N/A,PHASE1_LOCK,User_Must_Verify,Referenced in PHASE1_EVIDENCE_FOUNDATION notebook
+GDrive_Phase1_Freeze,Remote_Manifest,BLOCKED_Remote,N/A,PHASE1_FREEZE,User_Must_Verify,Referenced in PHASE1_EVIDENCE_FOUNDATION notebook
+GDrive_Phase2_Master_Certificate,Remote_Manifest,BLOCKED_Remote,N/A,PHASE2_CERT,User_Must_Verify,Expected hash: a8e928d65835657795f887b764b23a3f15c0410b9acb2d237ca07c90c7259b5b
+GDrive_Evidence_Cube_v101,Remote_Parquet,BLOCKED_Remote,N/A,PHASE1_Evidence,User_Must_Verify,path: 05_outputs/tables/phase1_publication_synthesis_v101/phase1_extended_evidence_cube_phase1_extended_evidence_geography_fixed_v101.parquet
+GDrive_Phase2_Freeze_JSON,Remote_Manifest,BLOCKED_Remote,N/A,PHASE2_FREEZE,User_Must_Verify,path: 00_admin/phase2_intake/PHASE2_MASTER_FREEZE.json
+GDrive_Phase2_Cert_JSON,Remote_Manifest,BLOCKED_Remote,N/A,PHASE2_CERT,User_Must_Verify,path: 00_admin/phase2_intake/PHASE2_MASTER_CERTIFICATE.json
+GDrive_Phase3_NB03_Lock,Remote_Manifest,BLOCKED_Remote,N/A,PHASE3_NB03,User_Must_Verify,Required by FASE_4.ipynb
+GDrive_PNADc_Certified_2022,Remote_Parquet,BLOCKED_Remote,N/A,PNADc_2022,User_Must_Verify,path: 03_processed/10_pnadc_certified/certified_pnadc_platform_2022.parquet
+GDrive_PNADc_Certified_2024,Remote_Parquet,BLOCKED_Remote,N/A,PNADc_2024,User_Must_Verify,path: 03_processed/10_pnadc_certified/certified_pnadc_platform_2024.parquet
+GDrive_Spatial_Syntax_Metrics,Remote_Parquet,BLOCKED_Remote,N/A,Spatial_Syntax,User_Must_Verify,path: 03_processed/spatial_syntax_metrics.parquet
+MASTER_CONSOLIDATION_FASES_0_3,Claim_Register,BLOCKED_Remote,N/A,All_Claims,User_Must_Provide_Path,Required for claim-to-code cross-reference - file not found in local repo
+SPINE_GPEv7_PHASE1_EXTENDED_EVIDENCE_COLAB_v1.0.0(2).ipynb,Phase1_Extended_Duplicate,Available_SizeAnomaly,Size_Mismatch_2MB,PHASE1_Extended,Investigate_Integrity,File size 2024998 bytes vs 10541 bytes for canonical - possible corruption or content divergence
+notebooks_spineV7.zip,Archive_Source,Available_Local,c80df5f4...,Unknown,Extract_and_Audit,974KB zip archive - SHA256: c80df5f44a84c38fcf984aa771a06bce005c1cf153682be61d7649595d464ba5 - Contains 69 notebooks identical to /workspace/notebooks/ directory
