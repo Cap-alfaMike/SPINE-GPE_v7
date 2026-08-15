@@ -1,0 +1,54 @@
+{
+  "package": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING",
+  "version": "1.1.0",
+  "created_at_utc": "2026-07-24T00:00:00+00:00",
+  "entrypoint": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.py",
+  "files": [
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.py",
+      "size_bytes": 89638,
+      "sha256": "a0a22769e4f732163cce3dbc52818c8e7eeb9b2aac310be6a0c852db1bf224bf"
+    },
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_COLAB_v1.1.0.ipynb",
+      "size_bytes": 7593,
+      "sha256": "ee3e049d8aaf667aac141ab420b633bf2e5e29180c9655763d09222131c179a4"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.txt",
+      "size_bytes": 177,
+      "sha256": "3bac70ee8d3517c828a00ad80ddfdfc115747547f46e4f8a5a19eafbdd327370"
+    },
+    {
+      "name": "pnadc_historical_backcast_hardening_semantic_contract_v1.1.0.json",
+      "size_bytes": 3167,
+      "sha256": "d25d528cbe37af1d5472d1213eb99a5b3b3b33efd990d239de6b245c7ddd871a"
+    },
+    {
+      "name": "README_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.md",
+      "size_bytes": 7768,
+      "sha256": "89745bc5bc0596cdf71dda4421d3054bb89f4f4c2292185b2db422fb90a99983"
+    },
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.md",
+      "size_bytes": 1534,
+      "sha256": "5289e443c2eb009cf855c58120e8a329c55cdc07e332616ebaf07643e2193fc5"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.md",
+      "size_bytes": 1628,
+      "sha256": "3960c900d657864526ea3ecd2e82f7745cb333fc14aff89e9977a76370049d62"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.1.0.py",
+      "size_bytes": 5265,
+      "sha256": "3b38c831589287f8a4afa217c54ba9b695db2729b323b825fc1ecf0ac92e89c7"
+    }
+  ],
+  "upstream_requirements": {
+    "historical_engine": "1.0.1",
+    "direct_certifier": "1.2.0",
+    "historical_lock": "00_admin/PNADC_HISTORICAL_PROXY_CERTIFICATION_LOCK.json"
+  },
+  "epistemic_limit": "Probabilidade histórica modelada; plataforma direta permanece não observada fora dos módulos especiais."
+}

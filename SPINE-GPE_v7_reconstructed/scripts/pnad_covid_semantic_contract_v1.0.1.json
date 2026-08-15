@@ -1,0 +1,25 @@
+{
+  "schema_version": "spine-gpe-v7-pnad-covid-semantic-contract-1.0.0",
+  "source": "PNAD COVID-19 2020",
+  "evidence_tier": "B",
+  "primary_reference_month": 9,
+  "identification": {
+    "pandemic_motoboy_observed": "C007C == 16",
+    "pandemic_goods_delivery_observed": "C007C == 17",
+    "pandemic_delivery_observed": "C007C in {16,17}",
+    "platform_delivery_direct": "NA for every record"
+  },
+  "survey_design": {
+    "weight": "V1032",
+    "stratum": "Estrato",
+    "psu": "UPA",
+    "pre_post_weight": "V1031",
+    "poststratum": "posest"
+  },
+  "limits": [
+    "C007C=17 mentions app examples but does not directly observe platform intermediation.",
+    "C007=7 is self-employment, not platform status.",
+    "Monthly pooled data are person-month observations from a fixed/repeated sample.",
+    "Income fields are nominal until the official deflator is applied."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "package": "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE",
+  "version": "1.0.1",
+  "created_at_utc": "2026-07-21T00:00:00Z",
+  "data_schema_version": "spine-gpe-v7-pnadc-historical-proxy-1.0.0",
+  "validation_schema_version": "spine-gpe-v7-pnadc-historical-validation-1.0.1",
+  "files": [
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.py",
+      "size_bytes": 81417,
+      "sha256": "4d8caf72b80ac4c0d58bc69b805704578b164aed4661df9b6eb42276f4e8eb3b"
+    },
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_COLAB_v1.0.1.ipynb",
+      "size_bytes": 7919,
+      "sha256": "f3d40e81594fcdeabd2cf81183412633f79f0840b1a936aa0208c165a0f18425"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.txt",
+      "size_bytes": 167,
+      "sha256": "7f34b3dfbebbf080944c1fe460ee0a4b9a4b3337e837559f0a933303e7c399d1"
+    },
+    {
+      "name": "pnadc_historical_proxy_semantic_contract_v1.0.1.json",
+      "size_bytes": 2578,
+      "sha256": "21eff49692d73ea10b4c47c2d7d522013e71ca542fd27b70e6a06a0f00b784f3"
+    },
+    {
+      "name": "README_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.md",
+      "size_bytes": 6414,
+      "sha256": "22c637cfa36073ba431841330b33862305f6888499bfde4192ef68f8c132978a"
+    },
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.md",
+      "size_bytes": 1658,
+      "sha256": "f6899dc9dcfd1e0272e8fd53cb5098969b83a30a3bbe54aaee54ed8dc4d551be"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.md",
+      "size_bytes": 1075,
+      "sha256": "f94c961e62189f03d7cbf30efa5ab30bcdf9ed6af9912c9487185a5d4c310aa7"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.1.py",
+      "size_bytes": 6795,
+      "sha256": "c73e4a35c0ae79ec06efcd278425480bd23b6dca8003b5811421b9d99e7ef894"
+    }
+  ],
+  "fix": "regular historical layout selector no longer calls direct-supplement selector"
+}

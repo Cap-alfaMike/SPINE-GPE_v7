@@ -1,0 +1,43 @@
+{
+  "package": "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0",
+  "version": "1.0.0",
+  "upstream_dependency": {
+    "filename": "SPINE_GPEv7_PNADC_CERTIFIER_v1.2.0.py",
+    "version": "1.2.0",
+    "expected_sha256": "e46d2e65ce0f49810d8dc0c72771ab93df984660ff3970a781ec9628e4f6e3cf"
+  },
+  "files": {
+    "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.py": {
+      "sha256": "e2574ed3a3edcb9dffe58f63d8c5361c4bf4653a4e60b27c69090bd11cf00962",
+      "bytes": 77310
+    },
+    "SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_COLAB_v1.0.0.ipynb": {
+      "sha256": "d70288022341900325a817447e53feb85477461b03e4cf4e106589d2174d1409",
+      "bytes": 8532
+    },
+    "requirements_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.txt": {
+      "sha256": "7f34b3dfbebbf080944c1fe460ee0a4b9a4b3337e837559f0a933303e7c399d1",
+      "bytes": 167
+    },
+    "pnadc_historical_proxy_semantic_contract_v1.0.0.json": {
+      "sha256": "dcb2bc95195a8eda7dfe1640676d493d65565544d78925f514f41a92a1729b49",
+      "bytes": 2154
+    },
+    "README_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.md": {
+      "sha256": "2d047054a1c17eb032e5d567da03ac9600a7813d72aa55fbd93f38b8b25c9c23",
+      "bytes": 5805
+    },
+    "CHANGELOG_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.md": {
+      "sha256": "bda223519ff26735ca326764341929cabab17a9115b2bb4e4a1c1462f626dd41",
+      "bytes": 1068
+    },
+    "VALIDATION_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.md": {
+      "sha256": "b352d1c16949edfc0055ba8116cae6dbb726909d1c4ebe202878c7d059b74c07",
+      "bytes": 1426
+    },
+    "TEST_SPINE_GPEv7_PNADC_HISTORICAL_PROXY_ENGINE_v1.0.0.py": {
+      "sha256": "e785067795a87e48edb8d74aed511755d7002c72ca189fb846df66424227c1c2",
+      "bytes": 5144
+    }
+  }
+}

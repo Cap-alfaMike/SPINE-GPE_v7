@@ -1,0 +1,112 @@
+{
+  "package": "SPINE_GPEv7_LAYOUT_RAIS_PACKAGE",
+  "version": "1.0.1",
+  "schema_version": "spine-gpe-v7-layout-rais-package-manifest-1.0.1",
+  "created_at_utc": "2026-07-24T21:39:14.979933+00:00",
+  "components": [
+    {
+      "name": "PNADc Annual Layout Equivalence Closure",
+      "script": "SPINE_GPEv7_PNADC_LAYOUT_EQUIVALENCE_CLOSURE_v1.0.1.py",
+      "version": "1.0.1"
+    },
+    {
+      "name": "RAIS Formal Baseline Certifier",
+      "script": "SPINE_GPEv7_RAIS_FORMAL_CERTIFIER_v1.0.0.py",
+      "version": "1.0.0"
+    },
+    {
+      "name": "Sequential Colab Runner",
+      "notebook": "SPINE_GPEv7_LAYOUT_CLOSURE_AND_RAIS_FORMAL_COLAB_v1.0.1.ipynb",
+      "version": "1.0.1"
+    }
+  ],
+  "fixes": [
+    "registry CSV no longer becomes a zero-byte file when no layout candidates are found",
+    "notebook handles legacy empty registries defensively",
+    "layout roots include documentation folders by default"
+  ],
+  "validation": {
+    "py_compile": true,
+    "synthetic_tests": "ALL TESTS PASSED",
+    "notebook_cells_compile": true,
+    "empty_registry_regression_test": true,
+    "real_microdata_execution": false
+  },
+  "files": [
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.1.md",
+      "size_bytes": 703,
+      "sha256": "b96a2828538106f3459dc93a67f0a0554751d607e5b2564cf5cab12c7e740a20"
+    },
+    {
+      "name": "OFFICIAL_SOURCE_REGISTRY_SPINE_GPEv7_LAYOUT_RAIS_v1.0.0.json",
+      "size_bytes": 977,
+      "sha256": "3ec482b0b20fc765f103cd17a7a22c238c43d95c2094658d35cb46a716f31228"
+    },
+    {
+      "name": "README_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.1.md",
+      "size_bytes": 8665,
+      "sha256": "e06bca0d5175db65cfd9de821415481b7efaa87c7250bf6a248c4b30ff626b7d"
+    },
+    {
+      "name": "SPINE_GPEv7_LAYOUT_CLOSURE_AND_RAIS_FORMAL_COLAB_v1.0.1.ipynb",
+      "size_bytes": 12796,
+      "sha256": "329668b454c97e0dc40e77abcf97d45f98e38ec746cdfd16b38fe2544d6ebf89"
+    },
+    {
+      "name": "SPINE_GPEv7_PNADC_LAYOUT_EQUIVALENCE_CLOSURE_v1.0.1.py",
+      "size_bytes": 38231,
+      "sha256": "a7769c62ec189dfeed5ece308ee12bf324233e27dabe9b2958f0537f56229509"
+    },
+    {
+      "name": "SPINE_GPEv7_RAIS_FORMAL_CERTIFIER_v1.0.0.py",
+      "size_bytes": 47332,
+      "sha256": "33683e9b3edc6ba39d0b3818a7115c091e8472d26af357f760169fe32b45619f"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.1.py",
+      "size_bytes": 5163,
+      "sha256": "715b19d6f17def33b39bf138713c4c4af9ef731c4a95f34f761134084664eb5f"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.1.md",
+      "size_bytes": 779,
+      "sha256": "ac744297cfe4b1c923de7429f02ff233b41795fad5966ee7037fbb412aa6f1a7"
+    },
+    {
+      "name": "ipca_deflator_template_v1.0.0.csv",
+      "size_bytes": 387,
+      "sha256": "e29ddbbf76a0a3993900ae29d6efcfebc357d375785b054fb86f8e309748bac0"
+    },
+    {
+      "name": "minimum_wage_template_v1.0.0.csv",
+      "size_bytes": 214,
+      "sha256": "c11f44a5f767096d2ccbb85f8f8c0e4cbb5606d9e7a6a4a54dc8eb474a47d524"
+    },
+    {
+      "name": "pnadc_layout_equivalence_semantic_contract_v1.0.0.json",
+      "size_bytes": 1373,
+      "sha256": "3256db5a227e982217561a2d972e17fda69b6860095ba3714540ddc01c6a3ca5"
+    },
+    {
+      "name": "pnadc_layout_source_registry_template_v1.0.0.csv",
+      "size_bytes": 653,
+      "sha256": "1bfd84f65ad8df342d818d550ef2d949225522c9f2d9191df0802a1627871079"
+    },
+    {
+      "name": "rais_formal_semantic_contract_v1.0.0.json",
+      "size_bytes": 1562,
+      "sha256": "55446ac901f81d0144cf074da2d51162a70c89425a8651e492a4accee13bcacc"
+    },
+    {
+      "name": "rais_golden_official_totals_template_v1.0.0.csv",
+      "size_bytes": 242,
+      "sha256": "18e4bf44b592cc4cbd42893c59001f2f65f3b49ac7e95b035934bf80adffee13"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.1.txt",
+      "size_bytes": 140,
+      "sha256": "d45b901b89496115d0234d7858138aed9176635aab13e682900f706bfeba5244"
+    }
+  ]
+}

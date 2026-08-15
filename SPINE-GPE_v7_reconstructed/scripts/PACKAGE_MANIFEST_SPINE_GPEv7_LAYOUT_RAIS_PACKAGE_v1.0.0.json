@@ -1,0 +1,103 @@
+{
+  "package": "SPINE_GPEv7_LAYOUT_RAIS_PACKAGE",
+  "version": "1.0.0",
+  "schema_version": "spine-gpe-v7-layout-rais-package-manifest-1.0.0",
+  "created_at_utc": "2026-07-24T21:16:34.270766+00:00",
+  "components": [
+    {
+      "name": "PNADc Annual Layout Equivalence Closure",
+      "script": "SPINE_GPEv7_PNADC_LAYOUT_EQUIVALENCE_CLOSURE_v1.0.0.py"
+    },
+    {
+      "name": "RAIS Formal Baseline Certifier",
+      "script": "SPINE_GPEv7_RAIS_FORMAL_CERTIFIER_v1.0.0.py"
+    },
+    {
+      "name": "Sequential Colab Runner",
+      "notebook": "SPINE_GPEv7_LAYOUT_CLOSURE_AND_RAIS_FORMAL_COLAB_v1.0.0.ipynb"
+    }
+  ],
+  "validation": {
+    "py_compile": true,
+    "synthetic_tests": "ALL TESTS PASSED",
+    "notebook_cells_compile": true,
+    "real_microdata_execution": false
+  },
+  "files": [
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.0.md",
+      "size_bytes": 804,
+      "sha256": "e5fbc03e876ceae9fc4f4ee6ff445f1d88b7fbc64e150c4c2f3315f9d2e583e3"
+    },
+    {
+      "name": "OFFICIAL_SOURCE_REGISTRY_SPINE_GPEv7_LAYOUT_RAIS_v1.0.0.json",
+      "size_bytes": 977,
+      "sha256": "3ec482b0b20fc765f103cd17a7a22c238c43d95c2094658d35cb46a716f31228"
+    },
+    {
+      "name": "README_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.0.md",
+      "size_bytes": 8290,
+      "sha256": "076da057a4f455a1b6013766300f498b832d7d15aeecdcdb71420437740f4ddb"
+    },
+    {
+      "name": "SPINE_GPEv7_LAYOUT_CLOSURE_AND_RAIS_FORMAL_COLAB_v1.0.0.ipynb",
+      "size_bytes": 12462,
+      "sha256": "d8ace472b1a69dd16dda2882b6d1412fd4b5b83a871f51d10b79847a74b576a3"
+    },
+    {
+      "name": "SPINE_GPEv7_PNADC_LAYOUT_EQUIVALENCE_CLOSURE_v1.0.0.py",
+      "size_bytes": 36952,
+      "sha256": "cff7d91545afca3f6f7789e5b3676383879b14c23ab465d876e7713159d0224d"
+    },
+    {
+      "name": "SPINE_GPEv7_RAIS_FORMAL_CERTIFIER_v1.0.0.py",
+      "size_bytes": 47332,
+      "sha256": "33683e9b3edc6ba39d0b3818a7115c091e8472d26af357f760169fe32b45619f"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.0.py",
+      "size_bytes": 4546,
+      "sha256": "b5b003b2b878e4fd44c0416e3564dec999d3206542ab81b9d734be89c75ccb7c"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.0.md",
+      "size_bytes": 968,
+      "sha256": "5e63df89a43946aae7f7900ba73d0f4ea61adbb7daf945211e68fcc4b2f39899"
+    },
+    {
+      "name": "ipca_deflator_template_v1.0.0.csv",
+      "size_bytes": 387,
+      "sha256": "e29ddbbf76a0a3993900ae29d6efcfebc357d375785b054fb86f8e309748bac0"
+    },
+    {
+      "name": "minimum_wage_template_v1.0.0.csv",
+      "size_bytes": 214,
+      "sha256": "c11f44a5f767096d2ccbb85f8f8c0e4cbb5606d9e7a6a4a54dc8eb474a47d524"
+    },
+    {
+      "name": "pnadc_layout_equivalence_semantic_contract_v1.0.0.json",
+      "size_bytes": 1373,
+      "sha256": "3256db5a227e982217561a2d972e17fda69b6860095ba3714540ddc01c6a3ca5"
+    },
+    {
+      "name": "pnadc_layout_source_registry_template_v1.0.0.csv",
+      "size_bytes": 653,
+      "sha256": "1bfd84f65ad8df342d818d550ef2d949225522c9f2d9191df0802a1627871079"
+    },
+    {
+      "name": "rais_formal_semantic_contract_v1.0.0.json",
+      "size_bytes": 1562,
+      "sha256": "55446ac901f81d0144cf074da2d51162a70c89425a8651e492a4accee13bcacc"
+    },
+    {
+      "name": "rais_golden_official_totals_template_v1.0.0.csv",
+      "size_bytes": 242,
+      "sha256": "18e4bf44b592cc4cbd42893c59001f2f65f3b49ac7e95b035934bf80adffee13"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_LAYOUT_RAIS_PACKAGE_v1.0.0.txt",
+      "size_bytes": 140,
+      "sha256": "d45b901b89496115d0234d7858138aed9176635aab13e682900f706bfeba5244"
+    }
+  ]
+}

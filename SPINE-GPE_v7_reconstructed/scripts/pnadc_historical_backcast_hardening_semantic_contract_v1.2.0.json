@@ -1,0 +1,71 @@
+{
+  "contract_version": "1.2.0",
+  "component": "PNADC_HISTORICAL_BACKCAST",
+  "schema_version": "spine-gpe-v7-pnadc-historical-backcast-hardening-1.2.0",
+  "model_schema_version": "spine-gpe-v7-pnadc-backcast-model-1.2.0",
+  "validation_schema_version": "spine-gpe-v7-pnadc-backcast-validation-1.2.0",
+  "upstream": {
+    "historical_proxy_engine": "1.0.1",
+    "direct_certifier": "1.2.0",
+    "required_historical_lock_status": "CERTIFIED",
+    "historical_core_freeze": "expected and hash-recorded when present"
+  },
+  "target": {
+    "name": "platform_delivery_direct",
+    "definition": "SD14001 == 1 AND S140093 == 1",
+    "available_directly": ["2022q4", "2024q3"],
+    "available_historically": false
+  },
+  "primary_features": [
+    {"harmonized": "occupation_code", "source": "V4010"},
+    {"harmonized": "activity_code", "source": "V4013"},
+    {"harmonized": "position_code", "source": "VD4009"}
+  ],
+  "primary_model": {
+    "name": "mapping_pooled",
+    "algorithm": "survey-weighted L2 logistic regression with categorical one-hot encoding",
+    "calibration": "isotonic regression fitted on internal PSU-held-out predictions",
+    "historical_estimand": "sum_i survey_weight_i * calibrated_probability_i"
+  },
+  "sensitivity_models": [
+    "mapping_2022",
+    "mapping_2024",
+    "weighted KNN in MCA space"
+  ],
+  "publication_corrections": {
+    "calibration_intercept_slope": "weighted binomial likelihood on standardized clipped logits with analytic gradient and deterministic fallback",
+    "bootstrap": "replicate-specific deterministic PSU bootstrap, checkpointing, resume, and publication profile with 500 requested replicates",
+    "knn_adjudication": "aggregate total and temporal-series agreement are primary; micro ranking is diagnostic only",
+    "mca_support_exports": "MCA coordinates and support classification are distinct artifacts with distinct hashes",
+    "lineage": "upstream lock and freeze hashes are recorded",
+    "layouts": "additional annual-layout roots can be supplied explicitly"
+  },
+  "profiles": {
+    "smoke": {"bootstrap_reps": 10, "purpose": "software execution check"},
+    "production": {"bootstrap_reps": 200, "purpose": "stable analytical run"},
+    "publication": {"bootstrap_reps": 500, "purpose": "final thesis/publication lock"}
+  },
+  "critical_gates": {
+    "temporal_auc_min": 0.80,
+    "temporal_brier_skill": ">0",
+    "pooled_golden_total_max_abs_relative_error": 0.15,
+    "publication_bootstrap_min_success_rate": 0.95,
+    "historical_direct_platform_must_remain_missing": true
+  },
+  "high_severity_diagnostics": {
+    "calibration_slope_expected_range": [0.75, 1.25],
+    "knn_temporal_total_correlation_min": 0.90,
+    "knn_max_abs_relative_total_difference": 0.10,
+    "out_of_support_expected_share_max": 0.10
+  },
+  "claim_ceiling": "Reconstrução retrospectiva probabilística agregada da compatibilidade histórica com entrega por plataforma, calibrada em 2022T4/2024T3, com incerteza e suporte explicitados.",
+  "epistemic_limit": "Probabilidade histórica modelada; plataforma direta permanece não observada fora dos módulos especiais.",
+  "prohibited_claims": [
+    "identificação individual histórica de trabalho por plataforma",
+    "contagem diretamente observada de plataforma em 2019-2021",
+    "efeito causal da plataforma",
+    "cluster interpretado como rótulo de plataforma",
+    "KNN tratado como estimando oficial",
+    "faixa de transporte tratada como intervalo de confiança"
+  ]
+}

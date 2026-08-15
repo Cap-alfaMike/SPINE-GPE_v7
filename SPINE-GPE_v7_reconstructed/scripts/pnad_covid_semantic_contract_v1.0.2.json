@@ -1,0 +1,35 @@
+{
+  "version": "1.0.2",
+  "schema_version": "spine-gpe-v7-pnad-covid-delivery-1.0.1",
+  "validation_schema_version": "spine-gpe-v7-pnad-covid-validation-1.0.1",
+  "contract": {
+    "source": "PNAD COVID-19 2020",
+    "evidence_tier": "B",
+    "estimand": "pandemic_delivery_observed",
+    "direct_platform_identification": false,
+    "occupation_variable": "C007C",
+    "occupation_codes": {
+      "16": "Motoboy",
+      "17": "Entregador de mercadorias (de restaurante, de farmácia, de loja, Uber Eats, IFood, Rappy etc.)"
+    },
+    "position_variable": "C007",
+    "self_employed_code": "7",
+    "categorical_code_normalization": "integer-like strings canonicalized; 07, 7.0 and 7 map to 7",
+    "social_security_variable": "C014",
+    "weight": "V1032",
+    "stratum": "Estrato",
+    "psu": "UPA",
+    "month": "V1013",
+    "usual_hours": "C008",
+    "actual_hours": "C009",
+    "usual_cash_income": "C01012",
+    "actual_cash_income": "C011A12",
+    "epistemic_limit": "A ocupação é observada, mas a intermediação por plataforma não é observada diretamente. Citações de aplicativos no rótulo de C007C=17 não transformam a categoria em identificação direta."
+  },
+  "hardening": {
+    "C007_normalization": "integer-like strings canonicalized: 07, 7.0, 7 -> 7",
+    "C014_denominator": "social-security percentage uses delivery workers with valid C014 only",
+    "missingness": "C014 missingness is reported, never recoded",
+    "immutable_outputs": "run-stamped canonical artifacts plus atomic latest aliases"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "spine-gpe-v7-phase0-closure-semantic-contract-1.0.0",
+  "package_version": "1.0.0",
+  "purpose": "Concluir a Fase 0 mediante adjudicação substantiva da RAIS, decodificação editorial e harmonização multibase fail-closed.",
+  "execution_principles": {
+    "fail_closed": true,
+    "no_raw_rais_reread": true,
+    "no_raw_pooling_across_bases": true,
+    "no_causal_claim_from_phase0": true,
+    "upstream_locks_are_source_of_truth": true,
+    "hash_verification_required_when_declared": true
+  },
+  "rais_estimands": {
+    "formal_active_links": "Todos os vínculos do CBO primário ativos em 31/12.",
+    "monthly_income_primary": "Vínculos ativos com remuneração mensal nominal positiva.",
+    "hourly_income_primary": "Vínculos ativos com remuneração positiva, jornada contratual entre 1 e 100 horas semanais e renda-hora não ausente.",
+    "sensitivity": "Todos os vínculos ativos, incluindo remuneração zero.",
+    "unit_of_analysis": "formal_employment_link",
+    "platform_direct_observed": false
+  },
+  "editorial_decoding": {
+    "dimensions_required": [
+      "sex",
+      "race",
+      "education",
+      "link_type"
+    ],
+    "unknown_codes": "block_core_dimension",
+    "missing_categories": "preserve_explicitly",
+    "cnae": "preserve_code; full label lookup is non-blocking and outside the core decoder",
+    "age": "derive editorial age bands from numeric age"
+  },
+  "evidence_hierarchy": {
+    "A": "PNADc special module, platform delivery directly observed",
+    "B": "PNAD COVID delivery occupation observed, platform not directly observed",
+    "C": "Historical probabilistic backcast, aggregate compatibility only",
+    "D": "RAIS administrative formal employment links"
+  },
+  "required_upstream_admin_files": [
+    "PNADC_CERTIFICATION_LOCK.json",
+    "PNAD_COVID_CERTIFICATION_LOCK.json",
+    "PNAD_COVID_CORE_FREEZE.json",
+    "PNADC_HISTORICAL_BACKCAST_FINAL_LOCK.json",
+    "PNADC_LAYOUT_EQUIVALENCE_FINAL_LOCK.json",
+    "PNADC_LAYOUT_CLOSURE_ADJUDICATION.json",
+    "RAIS_FORMAL_CERTIFICATION_LOCK.json",
+    "RAIS_FORMAL_CORE_FREEZE.json"
+  ],
+  "final_success_statuses": {
+    "rais_substantive_adjudication": "ADJUDICATED",
+    "rais_editorial_profile": "EDITORIAL_CERTIFIED",
+    "phase0_master": "PHASE0_CERTIFIED",
+    "phase0_master_freeze": "FROZEN"
+  },
+  "next_phase": "FASE_1_EVIDENCE_FOUNDATION"
+}

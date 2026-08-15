@@ -1,0 +1,48 @@
+{
+  "schema_version": "spine-gpe-v7-phase0-closure-official-source-registry-1.0.0",
+  "created_at_utc": "2026-07-26T16:24:58.137892+00:00",
+  "sources": [
+    {
+      "source_id": "MTE_RAIS_LAYOUT_GENERIC_1976_2022",
+      "authority": "Ministério do Trabalho e Emprego / RAIS",
+      "url": "https://rais.gov.br/sitio/rais_ftp/LayoutGenerico1976-2022.pdf",
+      "use": [
+        "sex coding",
+        "RAIS field semantics"
+      ],
+      "embedded_in_codebook": true
+    },
+    {
+      "source_id": "MTE_RAIS_MICRODATA_LAYOUT_XLS",
+      "authority": "Ministério do Trabalho e Emprego / PDET",
+      "url": "ftp://ftp.mtps.gov.br/pdet/microdados/RAIS/Layouts/Layout_Microdados_RAIS.xls",
+      "use": [
+        "race coding",
+        "education coding",
+        "missing values",
+        "link type legacy layout"
+      ],
+      "embedded_in_codebook": true
+    },
+    {
+      "source_id": "MTE_RAIS_MANUAL_2025",
+      "authority": "Ministério do Trabalho e Emprego / RAIS",
+      "url": "https://rais.gov.br/sitio/rais_ftp/ManualRAIS2025.pdf",
+      "use": [
+        "link type labels"
+      ],
+      "embedded_in_codebook": true,
+      "temporal_note": "Used only to label stable link-type codes; the 2022 raw codes are preserved in outputs."
+    },
+    {
+      "source_id": "MTE_RAIS_MICRODATA_PORTAL",
+      "authority": "Ministério do Trabalho e Emprego",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/microdados-rais-e-caged",
+      "use": [
+        "administrative provenance"
+      ],
+      "embedded_in_codebook": false
+    }
+  ],
+  "policy": "The codebook preserves original codes and source URLs. Unknown codes in core editorial dimensions cause a fail-closed status rather than an inferred label."
+}

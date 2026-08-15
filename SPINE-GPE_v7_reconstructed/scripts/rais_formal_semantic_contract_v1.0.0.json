@@ -1,0 +1,34 @@
+{
+  "schema_version": "spine-gpe-v7-rais-formal-certifier-1.0.0",
+  "component": "RAIS_FORMAL_BASELINE",
+  "evidence_tier": "D",
+  "unit_of_analysis": "formal employment link",
+  "primary_occupation_codes": ["519110"],
+  "primary_universe": "target CBO links active on 31/12",
+  "primary_variables": {
+    "occupation": "CBO 2002",
+    "active_status": "link active on 31/12",
+    "geography": "municipality of work/establishment",
+    "income": "nominal average remuneration preferred; December remuneration secondary; SM conversion last resort",
+    "hours": "contractual weekly hours"
+  },
+  "allowed_outputs": [
+    "formal active-link counts",
+    "nominal wage and contractual-hours summaries",
+    "real values only with explicit deflator",
+    "Brazil/region/UF/municipality/PE/Recife profiles",
+    "demographic and sectoral descriptions"
+  ],
+  "forbidden_claims": [
+    "RAIS represents informal workers",
+    "CBO 519110 directly identifies platform use",
+    "employment links are unique workers",
+    "contractual hours equal effective hours",
+    "nominal income is comparable across years without deflation"
+  ],
+  "2024_transition": {
+    "required_handling": "support .7z and .comt, and apply the official de-para when supplied",
+    "fallback": "aliases may resolve the schema, but absence of the official de-para remains a high-severity warning"
+  },
+  "claim_ceiling": "Administrative baseline of registered formal employment links in the target occupation; platform use remains unobserved and informal work remains outside the universe."
+}

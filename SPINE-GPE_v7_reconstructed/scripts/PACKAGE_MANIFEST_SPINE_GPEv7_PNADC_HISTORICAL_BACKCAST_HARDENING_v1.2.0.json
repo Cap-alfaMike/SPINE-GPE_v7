@@ -1,0 +1,48 @@
+{
+  "package": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING",
+  "version": "1.2.0",
+  "created_at_utc": "2026-07-24T18:51:52.979423+00:00",
+  "purpose": "Publication-grade corrected rerun of the certified PNADc historical backcast.",
+  "files": [
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.py",
+      "size_bytes": 108783,
+      "sha256": "f15b12e05ac11e3de16a6653eacca0d622d971a8f591035e0c76c349aa49d3ab"
+    },
+    {
+      "name": "SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_COLAB_v1.2.0.ipynb",
+      "size_bytes": 10049,
+      "sha256": "93cbcc954032701ce519cc3b4ac388a1a4a169c947c58d1089484cbe4e6513e0"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.txt",
+      "size_bytes": 217,
+      "sha256": "b806725cbcde2a313c3562c5b508a3d7e340684c54554fe408aae4cc2c4de33b"
+    },
+    {
+      "name": "pnadc_historical_backcast_hardening_semantic_contract_v1.2.0.json",
+      "size_bytes": 3485,
+      "sha256": "8c8331c5ff9a77ae586114b2527cae6c6e7eded59c8ace9ef4330020864ce579"
+    },
+    {
+      "name": "README_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.md",
+      "size_bytes": 5775,
+      "sha256": "0eab686ce55b6635981ed2278dc012cebbac5af393b029d8a30442b9266922cd"
+    },
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.md",
+      "size_bytes": 1719,
+      "sha256": "dfec4861e5a42749c45545b6b9f8cda5ee0e8cd059be0e4bb488c46960ad0b20"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.md",
+      "size_bytes": 1485,
+      "sha256": "15f4d42ffe39fdb5bf8a8da9e1c8af482859818dc7adc04f6bb8b4e362e06c4d"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_PNADC_HISTORICAL_BACKCAST_HARDENING_v1.2.0.py",
+      "size_bytes": 6506,
+      "sha256": "1185b0c4ab3ab880bcfd2718bca772205275c3319d05f0c57c9aed23602bdc29"
+    }
+  ]
+}

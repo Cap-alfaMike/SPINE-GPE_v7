@@ -1,0 +1,75 @@
+{
+  "package": "SPINE_GPEv7_PHASE0_CLOSURE_PACKAGE",
+  "version": "1.0.0",
+  "schema_version": "spine-gpe-v7-phase0-closure-package-manifest-1.0.0",
+  "created_at_utc": "2026-07-26T16:27:00.670092+00:00",
+  "purpose": "Finalizar a Fase 0 por adjudicação RAIS, decodificação editorial e master harmonization/evidence lock.",
+  "validation": {
+    "engine_py_compile": true,
+    "tests_py_compile": true,
+    "notebook_cells_compile": true,
+    "synthetic_success_path": true,
+    "synthetic_fail_closed_unmapped_code": true,
+    "synthetic_tests": "ALL TESTS PASSED",
+    "codebook_schema_valid": true,
+    "real_drive_execution": false
+  },
+  "expected_success_statuses": [
+    "ADJUDICATED",
+    "EDITORIAL_CERTIFIED",
+    "PHASE0_CERTIFIED",
+    "FROZEN"
+  ],
+  "files": [
+    {
+      "name": "CHANGELOG_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.md",
+      "size_bytes": 585,
+      "sha256": "3bec286b1eacfa2b66d3f433139d385adc25c701d971e8e483c210d59f702add"
+    },
+    {
+      "name": "OFFICIAL_SOURCE_REGISTRY_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.json",
+      "size_bytes": 1762,
+      "sha256": "0f53ee7bec854300c6022c9a40dfeb66a523c730003397ee71855804f4ea9034"
+    },
+    {
+      "name": "README_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.md",
+      "size_bytes": 5394,
+      "sha256": "bdf6e86c693c866ef768cacb57a1d5201a1e58e55fb0b7fbece4db59efdc1850"
+    },
+    {
+      "name": "SPINE_GPEv7_PHASE0_CLOSURE_COLAB_v1.0.0.ipynb",
+      "size_bytes": 9477,
+      "sha256": "6195107fbd4946c7fd34700999e36892213df8c2232a6fe039458962becd53ff"
+    },
+    {
+      "name": "SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.py",
+      "size_bytes": 57566,
+      "sha256": "39a9e3ad0ff8d5b81763694e89847d4f2c1124a11de0723c3674f9576cc488b4"
+    },
+    {
+      "name": "TEST_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.py",
+      "size_bytes": 7036,
+      "sha256": "6a7365c626dd5da2af273de3f075ed4c331b465d49a4bb15d5a6cb24030eca14"
+    },
+    {
+      "name": "VALIDATION_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.md",
+      "size_bytes": 1009,
+      "sha256": "51914454087c056f4cd5c43d398e48191365d593394d2b7560e789633212a2ec"
+    },
+    {
+      "name": "phase0_closure_semantic_contract_v1.0.0.json",
+      "size_bytes": 2378,
+      "sha256": "b3ef9cc3f6b1c962bd00ff59ad8aad65b7f226ed49a44c410fc16fc753147aaa"
+    },
+    {
+      "name": "rais_editorial_codebook_ptbr_v1.0.0.csv",
+      "size_bytes": 8158,
+      "sha256": "bf3cffbadf2b4bb23d431549a08919b2a840c1578b059b11bf8cc1a23c9cffb1"
+    },
+    {
+      "name": "requirements_SPINE_GPEv7_PHASE0_CLOSURE_v1.0.0.txt",
+      "size_bytes": 63,
+      "sha256": "fea7e8e42a6d742d05df750ac14c46c91d579169a365eed8f422a23be3007bac"
+    }
+  ]
+}

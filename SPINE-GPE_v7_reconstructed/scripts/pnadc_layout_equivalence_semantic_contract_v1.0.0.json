@@ -1,0 +1,22 @@
+{
+  "schema_version": "spine-gpe-v7-pnadc-layout-equivalence-closure-1.0.0",
+  "component": "PNADC_LAYOUT_EQUIVALENCE_CLOSURE",
+  "target_variables": ["V4010", "V4013", "VD4009", "V1028", "Estrato", "UPA", "UF", "Capital", "RM_RIDE"],
+  "reference_years": [2019, 2020, 2021, 2022, 2024],
+  "evidence_hierarchy": {
+    "documentary_full": "official dictionary/input with year attribution and structural fields",
+    "documentary_partial": "official document with only label or only input position",
+    "operational": "observed dtype/domain in certified Parquets; never substitutes documentary equivalence"
+  },
+  "statuses": {
+    "LAYOUT_EQUIVALENCE_CONFIRMED": "at least two independent annual versions, full coverage and no conflict",
+    "DOCUMENTATION_LIMITED_OPERATIONALLY_CONSISTENT": "insufficient independent annual documentation, no detected conflict; limitation frozen",
+    "LAYOUT_EQUIVALENCE_BLOCKED": "critical structural or semantic conflict"
+  },
+  "forbidden_claims": [
+    "same file width alone proves semantic equivalence",
+    "one 2022 dictionary is independent evidence for every year",
+    "operational domain stability replaces official documentation"
+  ],
+  "claim_ceiling": "Documentary equivalence is confirmed only from independent official versions; otherwise the engine freezes a documentation-limited operational consistency conclusion."
+}

@@ -1,0 +1,62 @@
+{
+  "contract_version": "1.1.0",
+  "schema_version": "spine-gpe-v7-pnadc-historical-backcast-hardening-1.1.0",
+  "component": "PNADC_HISTORICAL_BACKCAST",
+  "evidence_tier": "C",
+  "direct_target": {
+    "name": "platform_delivery_direct",
+    "definition": "SD14001 == 1 AND S140093 == 1",
+    "available_periods": ["2022q4", "2024q3"],
+    "source": "PNADc special platform modules, certified upstream"
+  },
+  "historical_application": {
+    "periods": "All certified regular-quarterly periods in the upstream historical lock",
+    "direct_platform_available": false,
+    "platform_delivery_direct": null,
+    "primary_estimand": "sum(survey_weight * probability_mapping_pooled)",
+    "measurement_status": "model_based_historical_compatibility",
+    "claim_ceiling": "Reconstrução retrospectiva probabilística agregada da compatibilidade histórica com entrega por plataforma, calibrada em 2022T4/2024T3, com incerteza e suporte explicitados."
+  },
+  "primary_features": [
+    "occupation_code",
+    "activity_code",
+    "position_code"
+  ],
+  "primary_models": {
+    "mapping_2022": "Survey-weighted L2 logistic regression trained on 2022, internally calibrated by PSU-fold isotonic regression",
+    "mapping_2024": "Survey-weighted L2 logistic regression trained on 2024, internally calibrated by PSU-fold isotonic regression",
+    "mapping_pooled": "Survey-weighted L2 logistic regression trained on pooled 2022+2024, internally calibrated by PSU-fold isotonic regression"
+  },
+  "auxiliary_models": {
+    "weighted_mca": "Weighted multiple correspondence analysis used only for support and extrapolation diagnostics",
+    "mca_clustering": "K-means on MCA coordinates used only for occupational typologies",
+    "weighted_knn": "Distance- and survey-weighted KNN used only as a non-parametric benchmark"
+  },
+  "uncertainty": {
+    "survey": "Stratum-PSU linearization conditional on model predictions",
+    "model": "PSU bootstrap with logistic and isotonic refit",
+    "transport": "Sensitivity range across mapping_2022, mapping_2024 and mapping_pooled",
+    "support": "Reported separately as STRONG, MODERATE, WEAK or OUT_OF_SUPPORT"
+  },
+  "support_classes": {
+    "STRONG": "Exact feature cell observed in both 2022 and 2024",
+    "MODERATE": "Exact feature cell observed in one calibration year or close to calibration support",
+    "WEAK": "Feature cell within the outer calibration-distance envelope but not exactly observed",
+    "OUT_OF_SUPPORT": "Unseen category or feature cell beyond the support-distance gate"
+  },
+  "prohibited_claims": [
+    "Individual direct platform identification in historical regular PNADc",
+    "Observed historical count of platform workers outside special modules",
+    "Causal effect of platform work",
+    "Cluster interpreted as a platform label",
+    "KNN estimate treated as the official series",
+    "Transport range described as a confidence interval",
+    "Thresholded proxy class treated as direct observation"
+  ],
+  "immutability": {
+    "read_only_upstream": true,
+    "raw_microdata_reprocessing": false,
+    "run_stamped_outputs": true,
+    "latest_alias_only_after_final_certification": true
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "validation_schema_version": "spine-gpe-v7-pnadc-validation-1.2.0",
+  "data_schema_version": "spine-gpe-v7-pnadc-certified-1.1.0",
+  "contracts": {
+    "platform_any_total": {
+      "table_key": "platform_any",
+      "table": 9432,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12900",
+        "Unidade de Medida (Código)": "1572",
+        "Trabalho por meio de plataforma digital de serviço no trabalho principal (Código)": "59653"
+      },
+      "domain": "platform_any_direct",
+      "estimand": "total",
+      "multiplier": 1000.0,
+      "tolerance": 0.015,
+      "tolerance_kind": "relative",
+      "severity": "critical"
+    },
+    "platform_any_percent": {
+      "table_key": "platform_any",
+      "table": 9432,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12902",
+        "Unidade de Medida (Código)": "2",
+        "Trabalho por meio de plataforma digital de serviço no trabalho principal (Código)": "59653"
+      },
+      "domain": "platform_any_direct",
+      "estimand": "percent",
+      "multiplier": 1.0,
+      "tolerance": 0.06,
+      "tolerance_kind": "absolute",
+      "severity": "critical"
+    },
+    "platform_delivery_total": {
+      "table_key": "platform_type",
+      "table": 9441,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12904",
+        "Unidade de Medida (Código)": "1572",
+        "Tipo de plataforma de serviço utilizada no trabalho principal (Código)": "59658"
+      },
+      "domain": "platform_delivery_direct",
+      "estimand": "total",
+      "multiplier": 1000.0,
+      "tolerance": 0.02,
+      "tolerance_kind": "relative",
+      "severity": "critical"
+    },
+    "platform_any_hours": {
+      "table_key": "hours",
+      "table": 9443,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12912",
+        "Unidade de Medida (Código)": "1574",
+        "Trabalho por meio de plataforma digital de serviço no trabalho principal (Código)": "59653"
+      },
+      "domain": "platform_any_direct",
+      "estimand": "mean_weekly_hours",
+      "multiplier": 1.0,
+      "tolerance": 0.15,
+      "tolerance_kind": "absolute",
+      "severity": "critical"
+    },
+    "platform_any_income": {
+      "table_key": "income",
+      "table": 9442,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12910",
+        "Unidade de Medida (Código)": "38",
+        "Nível de instrução (Código)": "120704",
+        "Trabalho por meio de plataforma digital de serviço no trabalho principal (Código)": "59653"
+      },
+      "domain": "platform_any_direct",
+      "estimand": "mean_monthly_income",
+      "multiplier": 1.0,
+      "tolerance": 0.02,
+      "tolerance_kind": "relative",
+      "severity": "high"
+    },
+    "platform_any_social_security_total": {
+      "table_key": "social_security",
+      "table": 9642,
+      "selectors": {
+        "Nível Territorial (Código)": "1",
+        "Brasil (Código)": "1",
+        "Variável (Código)": "12900",
+        "Unidade de Medida (Código)": "1572",
+        "Contribuição para instituto de previdência em qualquer trabalho (Código)": "99157",
+        "Trabalho por meio de plataforma digital de serviço no trabalho principal (Código)": "59653"
+      },
+      "domain": "platform_any_social_security",
+      "estimand": "total",
+      "multiplier": 1000.0,
+      "tolerance": 0.01,
+      "tolerance_kind": "relative",
+      "severity": "critical"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "spine-gpe-v7-pnadc-historical-proxy-contract-1.0.0",
+  "source_historical": "PNAD Contínua trimestral regular",
+  "source_calibration": [
+    "PNADc módulo Trabalho por meio de plataformas digitais 2022T4",
+    "PNADc módulo Trabalho por meio de plataformas digitais 2024T3"
+  ],
+  "direct_target": "SD14001=1 AND S140093=1",
+  "historical_direct_platform_available": false,
+  "historical_estimand": "platform_delivery_probability_calibrated",
+  "evidence_tier": "C",
+  "primary_features": [
+    "V4010 / occupation_code",
+    "V4013 / activity_code",
+    "VD4009 / position_code"
+  ],
+  "primary_feature_policy": "Somente ocupação, atividade e posição entram no modelo primário.",
+  "forbidden_primary_features": [
+    "renda",
+    "jornada",
+    "sexo",
+    "cor ou raça",
+    "idade",
+    "educação",
+    "contribuição previdenciária",
+    "informalidade"
+  ],
+  "occupation_compatible_codes_from_upstream_v1_2_0": [
+    "8321",
+    "8322",
+    "8332",
+    "9331",
+    "9332",
+    "9333",
+    "9621"
+  ],
+  "delivery_activity_codes_from_upstream_v1_2_0": [
+    "53002"
+  ],
+  "model": "survey-weighted L2 logistic regression with temporal holdout and isotonic calibration",
+  "temporal_validation": [
+    "train 2022 -> test 2024",
+    "train 2024 -> test 2022"
+  ],
+  "primary_output_use": "Agregação ponderada das probabilidades para estimativas nacionais model-based.",
+  "binary_class_use": "Apenas diagnóstico de threshold e análise de sensibilidade.",
+  "direct_columns_historical": {
+    "platform_delivery_direct": null,
+    "platform_direct_available": false,
+    "no_proxy_fill_direct": true
+  },
+  "claim_ceiling": "Compatibilidade histórica modelada com o padrão direto observado em 2022T4 e 2024T3; não identificação individual direta e não efeito causal.",
+  "forbidden_claims": [
+    "A proxy identifica diretamente trabalhadores de plataforma.",
+    "A probabilidade histórica preenche SD14001 ou S140093.",
+    "A série 2020-2022-2024 constitui DiD causal.",
+    "O modelo descobre o algoritmo real das plataformas.",
+    "A classe binária é verdade individual sem incerteza."
+  ],
+  "engine_version": "1.0.1",
+  "validation_schema_version": "spine-gpe-v7-pnadc-historical-validation-1.0.1",
+  "layout_selection": {
+    "historical_regular": "exact record width + V4010/V4013/VD4009 + no SD14001/S140093",
+    "direct_calibration": "certified Parquet upstream; no raw direct layout selection",
+    "forbidden_selector": "upstream.select_layout (direct-supplement selector) for regular historical TXT"
+  }
+}
